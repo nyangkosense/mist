@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{.Title}} - Mist Demo Site</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Mist Demo Site</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            {{range .Nav}}
+            <a href="{{.}}.html">{{. | title}}</a>
+            {{end}}
+        </nav>
+    </header>
+    
+    <main>
+        <article>
+            {{.Content}}
+        </article>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Mist Demo Site. Generated with <a href="https://github.com/nyangkosense/mist">mist</a>.</p>
+    </footer>
+</body>
+</html>
