@@ -1,6 +1,6 @@
 mist
 ====
-*m*inimal stat*i*c *s*i*t*e generator written in Go.
+*mi*ni *st*atic site generator written in Go.
 
 mist generates static HTML pages from markdown files in a flat directory
 structure. A simple, more lightweight solution for basic static sites.
